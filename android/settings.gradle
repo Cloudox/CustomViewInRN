@@ -1,0 +1,3 @@
+rootProject.name = 'customViewInRN'
+
+include ':app'
