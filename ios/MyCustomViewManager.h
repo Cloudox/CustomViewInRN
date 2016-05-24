@@ -1,15 +1,13 @@
 //
-//  MyCustomView.h
+//  MyCustomViewManager.h
 //  customViewInRN
 //
 //  Created by csdc-iMac on 16/5/23.
 //  Copyright © 2016年 Cloudox. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "RCTViewManager.h"
 
-@interface MyCustomView : UIView
-
-@property (nonatomic) BOOL isRed;
+@interface MyCustomViewManager : RCTViewManager
 
 @end

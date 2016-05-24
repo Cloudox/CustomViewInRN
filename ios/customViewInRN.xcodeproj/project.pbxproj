@@ -23,6 +23,7 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADEAB4441CF2FAA000413D00 /* MyCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEAB4431CF2FAA000413D00 /* MyCustomView.m */; };
+		ADEAB4511CF2FBE000413D00 /* MyCustomViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEAB4501CF2FBE000413D00 /* MyCustomViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,8 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADEAB4421CF2FAA000413D00 /* MyCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomView.h; sourceTree = "<group>"; };
 		ADEAB4431CF2FAA000413D00 /* MyCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomView.m; sourceTree = "<group>"; };
+		ADEAB44F1CF2FBE000413D00 /* MyCustomViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomViewManager.h; sourceTree = "<group>"; };
+		ADEAB4501CF2FBE000413D00 /* MyCustomViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomViewManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +243,8 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				ADEAB4421CF2FAA000413D00 /* MyCustomView.h */,
 				ADEAB4431CF2FAA000413D00 /* MyCustomView.m */,
+				ADEAB44F1CF2FBE000413D00 /* MyCustomViewManager.h */,
+				ADEAB4501CF2FBE000413D00 /* MyCustomViewManager.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
@@ -550,6 +555,7 @@
 				ADEAB4441CF2FAA000413D00 /* MyCustomView.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				ADEAB4511CF2FBE000413D00 /* MyCustomViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

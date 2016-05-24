@@ -9,27 +9,38 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  PropTypes,
+  requireNativeComponent
 } from 'react-native';
 
-class customViewInRN extends Component {
+var NativeMyCustomView = requireNativeComponent('MyCustomView', MyCustomView);
+
+export default class MyCustomView extends Component {
+  static propTypes = {
+    isRed: true,
+  };
+  render() {
+    return <NativeMyCustomView {...this.props} />;
+  }
+}
+
+var customViewInRN = React.createClass ({
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Red one
         </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
+        <MyCustomView style={styles.customView} isRed={true} />
+        <Text style={styles.welcome}>
+          Not red one
         </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+        <MyCustomView style={styles.customView} isRed={false} />
       </View>
     );
   }
-}
+});
 
 const styles = StyleSheet.create({
   container: {
@@ -43,10 +54,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 10,
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  customView: {
+    width: 20,
+    height: 20,
   },
 });
 
